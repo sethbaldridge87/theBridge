@@ -1,0 +1,103 @@
+$small: 543px;
+$medium: 768px;
+$large: 992px;
+$extra: 1200px;
+
+@mixin sm {
+    @media (min-width: #{$small}) and (max-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$medium}) and (max-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$extra}) {
+        @content;
+    }
+}
+
+body {
+    nav {
+        &.bg-dark {
+            background-color: #202020 !important;
+        }
+        &.navbar-dark {
+            .navbar-nav {
+                .nav-item {
+                    // &:last-of-type {
+                    //     text-decoration: underline;
+                    // }
+
+                    .nav-link {
+                        color: rgb(226, 138, 226);
+                        transition: .5s;
+
+                        &:hover {
+                            color: rgb(103, 188, 214);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #social-media {
+            margin-top: 10px;
+
+            svg {
+                fill: rgb(226, 138, 226);
+                height: 30px;
+                transition: .25s;
+                width: 30px;
+
+                &:hover {
+                    fill: rgb(103, 188, 214);
+                }
+            }
+        }
+    }
+    
+
+    #spacer {
+        height: 56px;
+    }
+
+    #header {
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    @include sm {
+        
+    }
+
+    @include md {
+        
+    }
+
+    @include lg {
+        nav {
+            #social-media {
+                margin-top: 0;
+                position: absolute;
+                right: 15px;
+            }
+        }
+    }
+
+    @include xl {
+        
+    }
+}

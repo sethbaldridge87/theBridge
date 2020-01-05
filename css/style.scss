@@ -1,4 +1,5 @@
 // Color Variables:
+$gwen-black: rgb(68, 67, 67);
 $gwen-blue: rgb(103, 188, 214);
 $gwen-pink: rgb(226, 138, 226);
 
@@ -32,6 +33,10 @@ $extra: 1200px;
 }
 
 body {
+    * {
+        color: $gwen-black;
+    }
+    
     section {
         margin: 0 0 25px 0;
     }
@@ -73,7 +78,7 @@ body {
     }
     nav {
         &.bg-dark {
-            background-color: #202020 !important;
+            background-color: $gwen-black !important;
         }
 
         &.navbar-dark {
@@ -112,17 +117,17 @@ body {
         }
     }
     
-
     #spacer {
         height: 56px;
     }
 
+    // Main
     #header {
         img {
             max-width: 100%;
         }
     }
-    
+
     @include sm {
         
     }

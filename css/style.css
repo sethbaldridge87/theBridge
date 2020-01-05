@@ -1,3 +1,7 @@
+body * {
+  color: #444343;
+}
+
 body section {
   margin: 0 0 25px 0;
 }
@@ -53,7 +57,7 @@ body #loader .row .spinner {
 }
 
 body nav.bg-dark {
-  background-color: #202020 !important;
+  background-color: #444343 !important;
 }
 
 body nav.navbar-dark .navbar-nav .nav-item .nav-link {

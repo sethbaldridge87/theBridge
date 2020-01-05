@@ -1,3 +1,7 @@
+// Color Variables:
+$gwen-blue: rgb(103, 188, 214);
+$gwen-pink: rgb(226, 138, 226);
+
 $small: 543px;
 $medium: 768px;
 $large: 992px;
@@ -28,10 +32,50 @@ $extra: 1200px;
 }
 
 body {
+    section {
+        margin: 0 0 25px 0;
+    }
+
+    #loader {
+        background: $gwen-blue;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+
+        .row {
+            position: relative;
+            top: 40%;
+
+            .spinner {
+                animation: spin 2s linear infinite;
+                border: 16px solid #f3f3f3;
+                border-top: 16px solid $gwen-pink;
+                border-radius: 50%;
+                height: 120px;
+                left: 0;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                right: 0;
+                width: 120px;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
     nav {
         &.bg-dark {
             background-color: #202020 !important;
         }
+
         &.navbar-dark {
             .navbar-nav {
                 .nav-item {
@@ -40,11 +84,11 @@ body {
                     // }
 
                     .nav-link {
-                        color: rgb(226, 138, 226);
+                        color: $gwen-pink;
                         transition: .5s;
 
                         &:hover {
-                            color: rgb(103, 188, 214);
+                            color: $gwen-blue;
                         }
 
                     }
@@ -56,13 +100,13 @@ body {
             margin-top: 10px;
 
             svg {
-                fill: rgb(226, 138, 226);
+                fill: $gwen-pink;
                 height: 30px;
                 transition: .25s;
                 width: 30px;
 
                 &:hover {
-                    fill: rgb(103, 188, 214);
+                    fill: $gwen-blue;
                 }
             }
         }

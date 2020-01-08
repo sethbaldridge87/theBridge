@@ -1,0 +1,17 @@
+#package-page #package-title h1 {
+  margin: 25px 0;
+  text-align: center;
+}
+
+#package-page #package-list .col-xs-12 {
+  margin-bottom: 50px;
+}
+
+#package-page #package-list .col-xs-12 h4 {
+  text-align: center;
+}
+
+#package-page #package-list .col-xs-12 img {
+  width: 100%;
+}
+/*# sourceMappingURL=packages.css.map */

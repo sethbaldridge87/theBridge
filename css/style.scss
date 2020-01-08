@@ -76,6 +76,7 @@ body {
             }
         }
     }
+
     nav {
         &.bg-dark {
             background-color: $gwen-black !important;
@@ -84,9 +85,21 @@ body {
         &.navbar-dark {
             .navbar-nav {
                 .nav-item {
-                    // &:last-of-type {
-                    //     text-decoration: underline;
-                    // }
+                    &:last-of-type {
+                        background: #fff;
+                        border-radius:  5px;
+                        padding: 0 10px;
+                        transition: .5s;
+                        width: 155px;
+
+                        &:hover {
+                            background: $gwen-pink;
+
+                            .nav-link {
+                                color: $gwen-black;
+                            }
+                        }
+                    }
 
                     .nav-link {
                         color: $gwen-pink;
@@ -100,19 +113,19 @@ body {
                 }
             }
         }
+    }
 
-        #social-media {
-            margin-top: 10px;
+    .social-media {
+        margin-top: 10px;
 
-            svg {
-                fill: $gwen-pink;
-                height: 30px;
-                transition: .25s;
-                width: 30px;
+        svg {
+            fill: $gwen-pink;
+            height: 30px;
+            transition: .25s;
+            width: 30px;
 
-                &:hover {
-                    fill: $gwen-blue;
-                }
+            &:hover {
+                fill: $gwen-blue;
             }
         }
     }
@@ -128,6 +141,34 @@ body {
         }
     }
 
+    #home-page {
+        padding: 15px;
+    }
+
+    // Footer
+    footer {
+        background: $gwen-black;
+        .container {
+            padding: 15px 0 0;
+            
+            .row {
+                p {
+                    color: #fff;
+                }
+
+                h5, h6 {
+                    color: $gwen-blue;
+                }
+
+                .social-media {
+                    position: absolute;
+                    right: 15px;
+                }
+            }
+        }
+        
+    }
+
     @include sm {
         
     }
@@ -138,11 +179,21 @@ body {
 
     @include lg {
         nav {
-            #social-media {
-                margin-top: 0;
-                position: absolute;
-                right: 15px;
+            &.navbar-dark {
+                .navbar-nav {
+                    .nav-item {
+                        &:last-of-type {
+                            width: auto;
+                        }
+                    }
+                }
             }
+        }
+
+        .social-media {
+            margin-top: 0;
+            position: absolute;
+            right: 15px;
         }
     }
 

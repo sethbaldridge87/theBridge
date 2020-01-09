@@ -3,19 +3,19 @@ $gwen-black: rgb(68, 67, 67);
 $gwen-blue: rgb(103, 188, 214);
 $gwen-pink: rgb(226, 138, 226);
 
-$small: 543px;
+$small: 576px;
 $medium: 768px;
 $large: 992px;
 $extra: 1200px;
 
 @mixin sm {
-    @media (min-width: #{$small}) and (max-width: #{$medium}) {
+    @media (min-width: #{$small}) {
         @content;
     }
 }
 
 @mixin md {
-    @media (min-width: #{$medium}) and (max-width: #{$large}) {
+    @media (min-width: #{$medium}) {
         @content;
     }
 }
@@ -116,8 +116,6 @@ body {
     }
 
     .social-media {
-        margin-top: 10px;
-
         svg {
             fill: $gwen-pink;
             height: 30px;
@@ -148,9 +146,10 @@ body {
     // Footer
     footer {
         background: $gwen-black;
+        
         .container {
-            padding: 15px 0 0;
-            
+            padding: 15px;
+
             .row {
                 p {
                     color: #fff;
@@ -170,11 +169,14 @@ body {
     }
 
     @include sm {
-        
+        footer {
+            .container {
+                padding: 15px 0;
+            }
+        }
     }
 
     @include md {
-        
     }
 
     @include lg {
@@ -191,7 +193,6 @@ body {
         }
 
         .social-media {
-            margin-top: 0;
             position: absolute;
             right: 15px;
         }

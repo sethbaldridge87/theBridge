@@ -87,10 +87,6 @@ body nav.navbar-dark .navbar-nav .nav-item .nav-link:hover {
   color: #67bcd6;
 }
 
-body .social-media {
-  margin-top: 10px;
-}
-
 body .social-media svg {
   fill: #e28ae2;
   height: 30px;
@@ -120,7 +116,7 @@ body footer {
 }
 
 body footer .container {
-  padding: 15px 0 0;
+  padding: 15px;
 }
 
 body footer .container .row p {
@@ -136,12 +132,17 @@ body footer .container .row .social-media {
   right: 15px;
 }
 
+@media (min-width: 576px) {
+  body footer .container {
+    padding: 15px 0;
+  }
+}
+
 @media (min-width: 992px) {
   body nav.navbar-dark .navbar-nav .nav-item:last-of-type {
     width: auto;
   }
   body .social-media {
-    margin-top: 0;
     position: absolute;
     right: 15px;
   }

@@ -1,0 +1,25 @@
+#about-page #about-content img {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+#about-page #about-content #bio {
+  margin: 50px 0 0;
+}
+
+#about-page #about-cta a {
+  text-decoration: none;
+}
+
+#about-page #about-cta a h2 {
+  margin: 50px 0;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#about-page #about-cta a h2:hover {
+  text-decoration: none;
+  color: #e28ae2;
+}
+/*# sourceMappingURL=about.css.map */

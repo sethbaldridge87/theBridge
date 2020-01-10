@@ -1,0 +1,33 @@
+$gwen-black: rgb(68, 67, 67);
+$gwen-blue: rgb(103, 188, 214);
+$gwen-pink: rgb(226, 138, 226);
+
+#about-page {
+    #about-content {
+        img {
+            margin: 10px 0 0;
+            width: 100%;
+        }
+
+        #bio {
+            margin: 50px 0 0;
+        }
+    }
+
+    #about-cta {
+        a {
+            text-decoration: none;
+
+            h2 {
+                margin: 50px 0;
+                text-align: center;
+                transition: .5s;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $gwen-pink;
+                }
+            }
+        }
+    }
+}

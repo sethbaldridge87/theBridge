@@ -40,6 +40,13 @@ body {
     section {
         margin: 0 0 25px 0;
     }
+    
+    .title {
+        h1 {
+            margin: 25px 0;
+            text-align: center;
+        }
+    }
 
     #loader {
         background: $gwen-blue;

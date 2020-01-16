@@ -1,3 +1,56 @@
+@font-face {
+  font-family: 'Brandon Grotesque Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Regular Italic"), url("../fonts/brandon-grotesque-regular-italic-58a8a456c4724.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Thin Italic"), url("../fonts/brandon-grotesque-thin-italic-58a8a3a8861fe.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Light"), url("../fonts/brandon-grotesque-light-58a8a4b38001d.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Light Italic"), url("../fonts/brandon-grotesque-light-italic-58a8a4ccb88be.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Medium Italic"), url("../fonts/brandon-grotesque-medium-italic-58a8a3c40866a.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Bold Italic"), url("../fonts/brandon-grotesque-bold-italic-58a8a48221563.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Black"), url("../fonts/brandon-grotesque-black-58a8a3e824392.woff") format("woff");
+}
+
+body {
+  font-family: 'Brandon Grotesque Light';
+}
+
 body * {
   color: #444343;
 }
@@ -7,6 +60,7 @@ body section {
 }
 
 body .title h1 {
+  font-weight: bold;
   margin: 25px 0;
   text-align: center;
 }
@@ -71,7 +125,7 @@ body nav.navbar-dark .navbar-nav .nav-item:last-of-type {
   padding: 0 10px;
   -webkit-transition: .5s;
   transition: .5s;
-  width: 155px;
+  width: 145px;
 }
 
 body nav.navbar-dark .navbar-nav .nav-item:last-of-type:hover {
@@ -124,8 +178,13 @@ body footer .container {
   padding: 15px;
 }
 
+body footer .container .row b {
+  color: #fff;
+}
+
 body footer .container .row p {
   color: #fff;
+  font-size: 13px;
 }
 
 body footer .container .row h5, body footer .container .row h6 {

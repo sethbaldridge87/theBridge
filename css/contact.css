@@ -1,0 +1,22 @@
+#contact-page h2 {
+  text-align: center;
+}
+
+#contact-page h3 {
+  text-align: center;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+#contact-page h3:hover {
+  color: #e28ae2;
+}
+
+#contact-page a {
+  text-decoration: none;
+}
+
+#contact-page .col-sm-12 {
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=contact.css.map */

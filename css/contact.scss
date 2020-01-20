@@ -1,0 +1,27 @@
+// Color Variables:
+$gwen-black: rgb(68, 67, 67);
+$gwen-blue: rgb(103, 188, 214);
+$gwen-pink: rgb(226, 138, 226);
+
+#contact-page {
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        transition: .25s;
+
+        &:hover {
+            color: $gwen-pink;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .col-sm-12 {
+        margin-bottom: 100px;
+    }
+}

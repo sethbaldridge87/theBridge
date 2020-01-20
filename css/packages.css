@@ -1,12 +1,16 @@
-#package-page #package-list .col-xs-12 {
+#package-page #package-list .col-sm-12 {
   margin-bottom: 50px;
 }
 
-#package-page #package-list .col-xs-12 h4 {
+#package-page #package-list .col-sm-12 h2 {
   text-align: center;
 }
 
-#package-page #package-list .col-xs-12 img {
+#package-page #package-list .col-sm-12 h4 {
+  text-align: center;
+}
+
+#package-page #package-list .col-sm-12 img {
   width: 100%;
 }
 /*# sourceMappingURL=packages.css.map */

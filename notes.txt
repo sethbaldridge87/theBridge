@@ -1,7 +1,2 @@
-Set characters page as home page
-Place a header with header text on each page
 Instagram API on about page
-2 available packages
-There will basically be 2 package options: 
-a 30 min meet & greet party or a 60 min full party. 
-And they can choose the activities.
+Pop up photo gallery for each character

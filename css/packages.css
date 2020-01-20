@@ -1,12 +1,12 @@
+#package-page p {
+  text-align: center;
+}
+
 #package-page #package-list .col-sm-12 {
   margin-bottom: 50px;
 }
 
 #package-page #package-list .col-sm-12 h2, #package-page #package-list .col-sm-12 h3, #package-page #package-list .col-sm-12 h4 {
-  text-align: center;
-}
-
-#package-page #package-list .col-sm-12 p {
   text-align: center;
 }
 /*# sourceMappingURL=packages.css.map */

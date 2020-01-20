@@ -1,3 +1,8 @@
+#about-page a {
+  color: #67bcd6;
+  text-decoration: none;
+}
+
 #about-page #about-content img {
   margin: 10px 0 0;
   width: 100%;
@@ -7,18 +12,14 @@
   margin: 50px 0 0;
 }
 
-#about-page #about-cta a {
-  text-decoration: none;
-}
-
-#about-page #about-cta a h2 {
+#about-page #about-cta h2 {
   margin: 50px 0;
   text-align: center;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-#about-page #about-cta a h2:hover {
+#about-page #about-cta h2:hover {
   text-decoration: none;
   color: #e28ae2;
 }

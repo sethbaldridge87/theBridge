@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAKA,AAEQ,SAFC,CACL,SAAS,CACL,EAAE,CAAC;EACC,KAAK,EANL,OAAkB;CAOrB",
+    "mappings": "AAKA,AAEQ,SAFC,CACL,SAAS,CACL,EAAE,CAAC;EACC,KAAK,EANL,OAAkB;CAOrB;;AAJT,AAMQ,SANC,CACL,SAAS,CAKL,CAAC,CAAC;EACE,aAAa,EAAE,IAAI;CACtB",
     "sources": [
         "faq.scss"
     ],

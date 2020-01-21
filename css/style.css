@@ -76,12 +76,15 @@ body #loader .row {
 }
 
 body #loader .row .logo-load {
+  -webkit-animation: imageFade 1s forwards ease-in-out;
+          animation: imageFade 1s forwards ease-in-out;
   position: relative;
   text-align: center;
+  opacity: 0;
   width: 100%;
 }
 
-body #loader .row .logo-load img {
+body #loader .row .logo-load svg {
   -webkit-filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
           filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
   width: 100%;
@@ -93,10 +96,11 @@ body #loader .row .logo-load .load-dots {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 180px;
+  width: 170px;
 }
 
 body #loader .row .logo-load .load-dots div {
+  border: 1px solid #444343;
   height: 25px;
   width: 25px;
   margin: 0 15px;
@@ -149,6 +153,28 @@ body #loader .row .logo-load .load-dots div:nth-of-type(3) {
   }
 }
 
+@-webkit-keyframes imageFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body nav.navbar {
+  padding: 0 1rem;
+}
+
 body nav.bg-dark {
   background-color: #444343 !important;
 }
@@ -175,6 +201,12 @@ body nav.navbar-dark .navbar-nav .nav-item.active a {
   color: #444343;
 }
 
+body nav img {
+  height: 50px;
+  -webkit-filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
+          filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
+}
+
 body .social-media svg {
   fill: #fff;
   height: 30px;
@@ -188,7 +220,7 @@ body .social-media svg:hover {
 }
 
 body #spacer {
-  height: 56px;
+  height: 60px;
 }
 
 body #header .row {
@@ -282,7 +314,7 @@ body footer .container .row a {
   body footer .container {
     padding: 15px 0;
   }
-  body #loader .row .logo-load img {
+  body #loader .row .logo-load svg {
     width: 30%;
   }
 }

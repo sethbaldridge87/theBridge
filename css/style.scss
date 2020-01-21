@@ -107,12 +107,13 @@ body {
             margin-top: 56px;
 
             .logo-load {
-                // background: #fff;
+                animation: imageFade 1s forwards ease-in-out;
                 position: relative;
                 text-align: center;
+                opacity: 0;
                 width: 100%;
 
-                img {
+                svg {
                     filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
                     width: 100%;
                 }
@@ -121,10 +122,10 @@ body {
                     display: flex;
                     margin-left: auto;
                     margin-right: auto;
-                    width: 180px;
+                    width: 170px;
 
                     div {
-                        
+                        border: 1px solid $gwen-black;
                         height: 25px;
                         width: 25px;
                         margin: 0 15px;
@@ -164,9 +165,23 @@ body {
                 margin-top: 0px;
             }
         }
+
+        @keyframes imageFade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     nav {
+        &.navbar {
+            padding: 0 1rem;
+        }
+        
         &.bg-dark {
             background-color: $gwen-black !important;
         }
@@ -195,6 +210,11 @@ body {
                 }
             }
         }
+
+        img {
+            height: 50px;
+            filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
+        }
     }
 
     .social-media {
@@ -211,7 +231,7 @@ body {
     }
     
     #spacer {
-        height: 56px;
+        height: 60px;
     }
 
     // Main
@@ -320,7 +340,7 @@ body {
         #loader {
             .row {
                 .logo-load {
-                    img {
+                    svg {
                         width: 30%;
                     }
                 }

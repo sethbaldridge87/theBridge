@@ -1,2 +1,4 @@
 Instagram API on about page
 Pop up photo gallery for each character
+Change portrait images to width of 510px (check on desktop first)
+nodemailer for email form

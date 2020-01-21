@@ -89,7 +89,7 @@ body #loader .row .logo-load svg {
 }
 
 body #loader .row .logo-load svg path, body #loader .row .logo-load svg circle {
-  fill: #eeceee;
+  fill: #fff;
 }
 
 body #loader .row .logo-load .load-dots {
@@ -106,7 +106,7 @@ body #loader .row .logo-load .load-dots div {
   width: 25px;
   margin: 0 15px;
   border-radius: 50%;
-  background: #eeceee;
+  background: #fff;
 }
 
 body #loader .row .logo-load .load-dots div:nth-of-type(1) {

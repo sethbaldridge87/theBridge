@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-#contact-page h3 {
-  text-align: center;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
-#contact-page h3:hover {
-  color: #eeceee;
-}
-
 #contact-page a {
   text-decoration: none;
 }
@@ -27,13 +17,13 @@
 }
 
 #contact-page form button {
-  background: #eeceee;
+  background: #444343;
+  color: #fff;
   -webkit-transition: .25s;
   transition: .25s;
 }
 
 #contact-page form button:hover {
   background: #67bcd6;
-  color: #fff;
 }
 /*# sourceMappingURL=contact.css.map */

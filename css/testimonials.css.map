@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAKA,AACI,kBADc,CACd,EAAE,CAAC;EACC,UAAU,EAAE,MAAM;CACrB",
+    "mappings": "AAOA,AACI,kBADc,CACd,EAAE,CAAC;EACC,UAAU,EAAE,MAAM;CACrB",
     "sources": [
         "testimonials.scss"
     ],

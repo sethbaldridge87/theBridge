@@ -9,4 +9,20 @@
 #package-page #package-list .col-sm-12 h2, #package-page #package-list .col-sm-12 h3, #package-page #package-list .col-sm-12 h4 {
   text-align: center;
 }
+
+#package-page #package-list .col-sm-12 img {
+  margin-top: 15px;
+  position: absolute;
+  width: 100px;
+}
+
+#package-page #package-list .col-sm-12#basic-package img {
+  -webkit-filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brightness(89%) contrast(87%);
+          filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brightness(89%) contrast(87%);
+}
+
+#package-page #package-list .col-sm-12#magical-package img {
+  -webkit-filter: invert(100%) sepia(39%) saturate(5277%) hue-rotate(195deg) brightness(109%) contrast(87%);
+          filter: invert(100%) sepia(39%) saturate(5277%) hue-rotate(195deg) brightness(109%) contrast(87%);
+}
 /*# sourceMappingURL=packages.css.map */

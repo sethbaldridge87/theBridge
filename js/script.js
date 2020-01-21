@@ -1,5 +1,5 @@
 $(window).on('load', function() {
-    // $('#loader').fadeOut('slow');
+    $('#loader').fadeOut('slow');
   });
 
 $(document).ready(function(){
@@ -9,7 +9,7 @@ $(document).ready(function(){
   for (var i = 0; i < totalPaths; i++) {
       var length = path[i].getTotalLength();
       $('path:nth-of-type(' + y + ')').css('fill','rgb(238, 206, 238)');
-      $('path:nth-of-type(' + y + ')').css('stroke','#000');
+      $('path:nth-of-type(' + y + ')').css('stroke','rgb(68, 67, 67)');
       $('path:nth-of-type(' + y + ')').css('stroke-dasharray',length);
       $('path:nth-of-type(' + y + ')').css('stroke-dashoffset',length);
       y++;

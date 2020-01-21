@@ -85,8 +85,6 @@ body #loader .row .logo-load {
 }
 
 body #loader .row .logo-load svg {
-  -webkit-filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
-          filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
   width: 100%;
 }
 

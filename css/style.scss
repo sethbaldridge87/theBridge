@@ -118,6 +118,10 @@ body {
 
                 svg {
                     width: 100%;
+
+                    path, circle {
+                        fill: $gwen-pink;
+                    }
                 }
 
                 .load-dots {
@@ -127,7 +131,6 @@ body {
                     width: 170px;
 
                     div {
-                        border: 1px solid $gwen-black;
                         height: 25px;
                         width: 25px;
                         margin: 0 15px;

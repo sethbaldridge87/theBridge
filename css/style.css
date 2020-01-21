@@ -88,6 +88,10 @@ body #loader .row .logo-load svg {
   width: 100%;
 }
 
+body #loader .row .logo-load svg path, body #loader .row .logo-load svg circle {
+  fill: #eeceee;
+}
+
 body #loader .row .logo-load .load-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +102,6 @@ body #loader .row .logo-load .load-dots {
 }
 
 body #loader .row .logo-load .load-dots div {
-  border: 1px solid #444343;
   height: 25px;
   width: 25px;
   margin: 0 15px;

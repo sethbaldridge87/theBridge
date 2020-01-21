@@ -72,44 +72,80 @@ body #loader {
 }
 
 body #loader .row {
-  position: relative;
-  top: 40%;
+  margin-top: 56px;
 }
 
-body #loader .row .spinner {
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #e28ae2;
-  border-radius: 50%;
-  height: 120px;
-  left: 0;
+body #loader .row .logo-load {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+body #loader .row .logo-load img {
+  -webkit-filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
+          filter: invert(86%) sepia(26%) saturate(228%) hue-rotate(251deg) brightness(98%) contrast(90%);
+  width: 100%;
+}
+
+body #loader .row .logo-load .load-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  right: 0;
-  width: 120px;
+  width: 180px;
 }
 
-@-webkit-keyframes spin {
+body #loader .row .logo-load .load-dots div {
+  height: 25px;
+  width: 25px;
+  margin: 0 15px;
+  border-radius: 50%;
+  background: #eeceee;
+}
+
+body #loader .row .logo-load .load-dots div:nth-of-type(1) {
+  -webkit-animation: loading 1s linear .25s infinite;
+          animation: loading 1s linear .25s infinite;
+}
+
+body #loader .row .logo-load .load-dots div:nth-of-type(2) {
+  -webkit-animation: loading 1s linear .5s infinite;
+          animation: loading 1s linear .5s infinite;
+}
+
+body #loader .row .logo-load .load-dots div:nth-of-type(3) {
+  -webkit-animation: loading 1s linear .75s infinite;
+          animation: loading 1s linear .75s infinite;
+}
+
+@-webkit-keyframes loading {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: -10px;
+  }
+  50% {
+    margin-top: 0px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    margin-top: 0px;
   }
 }
 
-@keyframes spin {
+@keyframes loading {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: -10px;
+  }
+  50% {
+    margin-top: 0px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    margin-top: 0px;
   }
 }
 
@@ -230,7 +266,7 @@ body footer .container .row h6 {
 }
 
 body footer .container .row h6:hover {
-  color: #e28ae2;
+  color: #eeceee;
 }
 
 body footer .container .row .social-media {
@@ -245,6 +281,9 @@ body footer .container .row a {
 @media (min-width: 576px) {
   body footer .container {
     padding: 15px 0;
+  }
+  body #loader .row .logo-load img {
+    width: 30%;
   }
 }
 

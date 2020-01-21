@@ -176,7 +176,7 @@ body {
                 .nav-item {
                     .nav-link {
                         color: #fff;
-                        transition: .5s;
+                        transition: .25s;
 
                         &:hover {
                             color: $gwen-blue;
@@ -186,7 +186,7 @@ body {
                         background: #fff;
                         border-radius: 5px;
                         padding: 0 10px;
-                        transition: .5s;
+                        transition: .25s;
 
                         a {
                             color: $gwen-black;

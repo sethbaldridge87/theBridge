@@ -19,4 +19,21 @@
 #contact-page .col-sm-12 {
   margin-bottom: 100px;
 }
+
+#contact-page form textarea {
+  resize: none;
+  height: 200px;
+  width: 100%;
+}
+
+#contact-page form button {
+  background: #eeceee;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+#contact-page form button:hover {
+  background: #67bcd6;
+  color: #fff;
+}
 /*# sourceMappingURL=contact.css.map */

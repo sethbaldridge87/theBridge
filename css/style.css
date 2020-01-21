@@ -155,8 +155,8 @@ body nav.bg-dark {
 
 body nav.navbar-dark .navbar-nav .nav-item .nav-link {
   color: #fff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 
 body nav.navbar-dark .navbar-nav .nav-item .nav-link:hover {
@@ -167,8 +167,8 @@ body nav.navbar-dark .navbar-nav .nav-item.active {
   background: #fff;
   border-radius: 5px;
   padding: 0 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 
 body nav.navbar-dark .navbar-nav .nav-item.active a {

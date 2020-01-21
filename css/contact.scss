@@ -24,4 +24,21 @@ $gwen-pink: rgb(238, 206, 238);
     .col-sm-12 {
         margin-bottom: 100px;
     }
+
+    form {
+        textarea {
+            resize: none;
+            height: 200px;
+            width: 100%;
+        }
+        button {
+            background: $gwen-pink;
+            transition: .25s;
+
+            &:hover {
+                background: $gwen-blue;
+                color: #fff;
+            }
+        }
+    }
 }

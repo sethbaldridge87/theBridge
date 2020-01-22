@@ -4,10 +4,8 @@ $gwen-blue: rgb(103, 188, 214);
 $gwen-blue-filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brightness(89%) contrast(87%);
 
 #contact-page {
-    h2 {
-        text-align: center;
-    }
-
+    text-align: center;
+    
     a {
         text-decoration: none;
     }
@@ -16,20 +14,7 @@ $gwen-blue-filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brig
         margin-bottom: 100px;
     }
 
-    form {
-        textarea {
-            resize: none;
-            height: 200px;
-            width: 100%;
-        }
-        button {
-            background: $gwen-black;
-            color: #fff;
-            transition: .25s;
-
-            &:hover {
-                background: $gwen-blue;
-            }
-        }
+    iframe {
+        height: 1550px;
     }
 }

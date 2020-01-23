@@ -237,7 +237,7 @@ body #header .row {
 
 body #header .row img {
   max-width: 100%;
-  height: unset;
+  height: inherit;
 }
 
 body #home-page {

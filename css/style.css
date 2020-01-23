@@ -235,9 +235,8 @@ body #header .row {
   position: relative;
 }
 
-body #header .row img {
-  max-width: 100%;
-  height: auto;
+body #header img {
+  width: 100%;
 }
 
 body #home-page {

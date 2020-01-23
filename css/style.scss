@@ -246,11 +246,10 @@ body {
     #header {
         .row {
             position: relative;
-
-            img {
-                max-width: 100%;
-                height: auto;
-            }
+        }
+        
+        img {
+            width: 100%;
         }
     }
 

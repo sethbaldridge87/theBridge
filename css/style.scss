@@ -248,8 +248,8 @@ body {
             position: relative;
 
             img {
-                height: auto;
                 max-width: 100%;
+                height: unset;
             }
         }
     }

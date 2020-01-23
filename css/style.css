@@ -331,6 +331,9 @@ body footer .container .row a {
   body nav.navbar-dark .navbar-nav .nav-item:last-of-type {
     width: auto;
   }
+  body #header img {
+    width: 100%;
+  }
   body .social-media {
     position: absolute;
     right: 15px;

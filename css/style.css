@@ -236,7 +236,7 @@ body #header .row {
 }
 
 body #header .row img {
-  max-height: 731px;
+  height: auto;
   max-width: 100%;
 }
 

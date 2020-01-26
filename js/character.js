@@ -8,7 +8,7 @@ $(document).ready(function(){
         var counter;
         var image = $(this).attr('src');
         $('#loader').css({display:'block',background:'rgb(103,188,214,.75)'});
-        var gallery = $('<div class="gallery"><img src="' + image + '" /><div id="left" class="arrow"><</div><div id="right" class="arrow">></div><div id="close">x</div></div>');
+        var gallery = $('<div class="gallery"><img src="' + image + '" /><div id="left" class="arrow"></div><div id="right" class="arrow"></div><div id="close">x</div></div>');
         $('#loader').html(gallery);
         for (i = 0; i < gallImg.length; i++) {
             if (gallImg[i] == image) {

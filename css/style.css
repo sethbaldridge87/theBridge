@@ -258,6 +258,12 @@ body .text-overlay {
   top: 50%;
 }
 
+body #character-images {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body #character-images .col-sm-12 {
   position: relative;
 }

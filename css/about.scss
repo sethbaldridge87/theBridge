@@ -3,11 +3,41 @@ $gwen-black: rgb(68, 67, 67);
 $gwen-blue: rgb(103, 188, 214);
 $gwen-blue-filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brightness(89%) contrast(87%);
 
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra: 1200px;
+
+@mixin sm {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$extra}) {
+        @content;
+    }
+}
+
 #about-page {
     a {
         color: $gwen-blue;
         text-decoration: none;
     }
+
     #about-content {
         img {
             margin: 10px 0 0;
@@ -28,6 +58,19 @@ $gwen-blue-filter: invert(72%) sepia(76%) saturate(395%) hue-rotate(161deg) brig
             &:hover {
                 text-decoration: none;
                 color: $gwen-blue;
+            }
+        }
+    }
+
+    @include md {
+        #about-content {
+            img {
+                margin: 0;
+                width: 100%;
+            }
+
+            #bio {
+                margin: 0;
             }
         }
     }

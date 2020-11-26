@@ -23,4 +23,14 @@
   text-decoration: none;
   color: #67bcd6;
 }
+
+@media (min-width: 768px) {
+  #about-page #about-content img {
+    margin: 0;
+    width: 100%;
+  }
+  #about-page #about-content #bio {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=about.css.map */
